@@ -1,0 +1,149 @@
+@font-face 
+{
+  font-family: "MyriadSet-Text";
+  src: url("MyriadSet-Text-reduced-EMEA.otf");
+  }
+
+@font-face 
+{
+  font-family: "MyriadSet-Semibold";
+  src: url("MyriadSet-Semibold-reduced-EN.otf");
+  }
+
+body {
+    margin: 0
+}
+
+.stage {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    line-height: 0;
+    cursor: pointer;
+    border: 1px solid #b2b2b2
+}
+
+.stage-images,
+.stage-copy {
+    position: relative;
+    overflow: hidden
+}
+
+.stage-image,
+.copy-text,
+.button {
+    position: absolute
+}
+
+[data-animate-scene] {
+    opacity: 1;
+    -webkit-backface-visibility: hidden
+}
+
+.stage-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1
+}
+/*
+.stage-image.fadeout {
+    -webkit-transition: opacity 2000ms linear
+}
+
+.stage-image.fadeout.animation-triggered-out {
+    opacity: 0
+}
+*/
+.stage-copy {
+    position: relative
+}
+
+.stage {
+    width: 968px;
+    height: 248px
+}
+
+.stage-images {
+    position: relative;
+    width: 424px;
+    height: 248px
+}
+.image-1{
+    z-index: 3;
+}
+.image-2{
+    z-index: 2;
+}
+.image-3{
+    z-index: 1;
+}
+
+.stage-copy {
+    position: absolute;
+    top: 0;
+    left: 445px;
+    width: 524px;
+    height: 100%;
+}
+
+.copy-2,
+.copy-3,
+.button,
+.button-copy{
+    opacity:0;
+}
+
+.copy-text {
+    position: absolute;
+    top: 118px;
+    left: 25px
+}
+
+.headline-copy {
+    top: 92px;
+	font-family:MyriadSet-Semibold;
+	font-size:24px;
+	color:#000000;
+	max-width:170px;
+	text-wrap:normal;
+	line-height:20px;
+}
+
+.copy-1,
+.copy-2,
+.copy-3 {
+	font-family:MyriadSet-Text;
+	font-size:24px;
+	color:#666666;
+	max-width:170px;
+	text-wrap:normal;
+	line-height:28px;
+}
+
+.button {
+	-webkit-border-radius:4;
+    -moz-border-radius:4;
+    border-radius:4px;
+    color:#ffffff;
+    border-color:#ffffff;
+    border-style:none;
+    background:#0088cc;
+	top: 30px;
+	left: 293px;
+	width: 100px;
+	height: 30px;
+	position: absolute;
+}
+
+.button-copy {
+    top:35px;
+    left:201px;
+	font-family:MyriadSet-Text;
+	font-size:18px;
+	color:#ffffff;
+	text-wrap:normal;
+	line-height:17px;
+	position:absolute;
+}
+
